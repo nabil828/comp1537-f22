@@ -8,15 +8,13 @@ For the table css, check
 <https://www.w3schools.com/css/css_table.asp>.
 
 ![Table Description automatically
-generated](./media/image1.png){width="5.219478346456693in"
-height="3.4796522309711286in"}
+generated](./media/image1.png)
 
 Try your best to recreate the following page using HTML tabels and CSS
 selectors:
 
 ![Shape, rectangle Description automatically
-generated](./media/image2.png){width="6.5in"
-height="2.171527777777778in"}
+generated](./media/image2.png)
 
 For each CSS style that is repeated, may you should use a *class* or an
 *element* CSS selector. Otherwise, use an *id* selector or *inline*
