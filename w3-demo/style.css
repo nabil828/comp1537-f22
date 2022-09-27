@@ -1,0 +1,13 @@
+  p {
+    padding: 5px;
+    border: solid greenyellow 5px;
+    margin: 10px;
+    background-color: cadetblue;
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: tomato;
+    margin: 0px;
+  }
