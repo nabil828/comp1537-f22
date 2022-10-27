@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    header {
+      border-bottom: 1px solid #eaecef;
+      overflow: hidden;
+    }
+
+    header a {
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      color: grey;
+      /* background-color: #333; */
+    }
+
+    header #dummy a:hover {
+      /* background-color: #333; */
+      color: black
+    }
+
+    header #dummy {
+      float: right;
+    }
+
+    header img {
+      float: left;
+      display: inline-block;
+    }
+
+    main {
+      clear: both;
+    }
+
+    main>h2 {
+      border-bottom: 1px solid #eaecef;
+    }
+
+    #main_title {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    section {
+      width: 1000px;
+      margin: 0px auto;
+    }
+
+    #card {
+      border: 1px solid #eaecef;
+      width: 480px;
+      display: inline-block;
+    }
+
+    #card img {
+      width: 100%;
+      border-radius: 2px;
+    }
+
+    #card #img_container {
+      width: 170px;
+      float: left;
+      /* padding: 0 5px; */
+    }
+
+    #card #dummy {
+      width: calc(100% - 170px);
+      float: left;
+    }
+
+    #centered_div {
+      width: calc(100% - 10px);
+      margin: 0px auto;
+    }
+
+    #card #img_container::after {
+      clear: both;
+    }
+
+    #card h4 {
+      font-weight: 400;
+      color: grey
+    }
+
+    footer {
+      color: grey;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width:900px) {
+      section {
+        width: 600px;
+      }
+
+      #card {
+        width: 296px;
+      }
+
+      #card #img_container {
+        width: 100%;
+        float: none;
+      }
+
+      #card #dummy {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    /* @media screen and (max-width:800px) {
+      section {
+        width: 600px;
+      }
+    } */
+
+    @media screen and (max-width:600px) {
+      section {
+        width: 100%;
+      }
+
+      #card {
+        width: 100%;
+      }
+
+      #logo {
+        display: none;
+      }
+
+      header #dummy {
+        float: none;
+        width: 100%;
+
+      }
+
+      header #dummy a {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+
+      header #dummy a:hover {
+        background-color: #333;
+        color: white;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <header>
+      <img id="logo" src="./logo.svg" alt="">
+      <div id="dummy">
+        <a href="#">Stories</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </header>
+    <main>
+      <h1 id="main_title">
+        Midterm Exam
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit nobis veniam quam qui deleniti sed nam, ipsum
+        voluptatem, porro, omnis distinctio! Voluptates quibusdam itaque culpa quae veritatis corporis dignissimos?
+      </p>
+      <h2> Stories </h2>
+      <div id="card">
+        <div id="img_container">
+          <img src="https://picsum.photos/200/300?random=4354" alt="">
+        </div>
+        <div id="dummy">
+          <div id="centered_div">
+            <h2>Card Title 1</h2>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit amet rerum alias
+              consectetur
+              aliquam in laudantium placeat officiis iusto?</h4>
+          </div>
+        </div>
+        <div class="spacer" style="clear: both;"></div>
+      </div>
+
+      <div id="card">
+        <div id="img_container">
+          <img src="https://picsum.photos/200/300?random=1213" alt="">
+        </div>
+        <div id="dummy">
+          <div id="centered_div">
+            <h2>Card Title 2</h2>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit amet rerum alias
+              consectetur
+              aliquam in laudantium placeat officiis iusto?</h4>
+          </div>
+        </div>
+        <div class="spacer" style="clear: both;"></div>
+      </div>
+
+    </main>
+
+    </main>
+    <footer>
+      Copyright © 2045 Your Website Name
+      Design & Code by Your Name
+    </footer>
+</body>
+
+</html>
