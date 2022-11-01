@@ -2,126 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    nav {
-      background-color: #333;
-    }
 
-    nav a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 10px;
-      color: antiquewhite;
-      width: 100px;
-    }
-
-    nav a:hover {
-      color: #333;
-      background-color: antiquewhite;
-    }
-
-    header {
-      text-align: center;
-    }
-
-    .card {
-      background-color: #a2b9bc;
-      /* padding: 20px;
-      margin: 5px; */
-      margin-top: 10px;
-    }
-
-    section {
-      float: left;
-      width: 70%;
-    }
-
-    aside {
-      float: right;
-      width: 30%;
-      padding-left: 10px;
-      box-sizing: border-box;
-    }
-
-    footer {
-      clear: both;
-      text-align: center;
-    }
-
-    #lastLink {
-      float: right;
-    }
-
-    body {
-      margin: 0px;
-    }
-
-    body {
-      margin: 16px;
-    }
-
-    @media screen and (max-width: 400px) {
-      section {
-        float: none;
-        width: 100%;
-      }
-
-      aside {
-        float: none;
-        width: 100%;
-        padding-left: 0px;
-      }
-
-      #lastLink {
-        float: none;
-      }
-
-      nav a {
-        width: 100%;
-        text-align: center;
-      }
-    }
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./index.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Header</h1>
-    <p>Should be Responsive</p>
-  </header>
-
-  <nav>
-    <a href="">Link 1</a>
-    <a href="">Link 2</a>
-    <a href="">Link 3</a>
-    <a href="" id="lastLink">Link 4</a>
-  </nav>
-  <main>
-    <section>
-      <div class="card">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, mollitia quidem eum distinctio cum nisi quo
-        error accusantium eaque illo esse recusandae magnam saepe pariatur voluptatem. Corrupti unde tempore quas.
-      </div>
-      <div class="card">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit totam laborum fuga. Dolorum, quae aperiam
-        exercitationem veritatis ipsum ad accusamus aliquam, distinctio eveniet est ex sunt sint deleniti, in sequi.
-      </div>
-    </section>
-    <aside>
-      <div class="card">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat consectetur modi. Fuga ullam
-        cupiditate ad perferendis aliquid ea illo accusamus fugit ex iure, exercitationem reiciendis sunt asperiores
-        numquam praesentium?
-      </div>
-    </aside>
-  </main>
-  <footer>
-    <h1>Footer</h1>
-  </footer>
+  <input type="text" id="cityName">
+  <button id="getWeatherBtn"> Click ME!</button>
+  <p id="output"></p>
+  <p id="description"></p>
+  <img src="" alt="">
 </body>
 
 </html>
