@@ -1,13 +1,13 @@
-
-var currentPage = 2;
+// GLOBAL VARIABLES
+var currentPage = 1;
 var pageSize = 3;
 
-setup = function () {
+const display = function () {
+  $("main").empty();
   $.ajax({
     url: "https://api.themoviedb.org/3/movie/top_rated?api_key=ed4ef9b0f9bcb9c237ab83a2c2ffb909&language=en-US&page=1",
     type: "GET",
     success: function (data) {
-      console.log(data["results"]);
       const start_index = (currentPage - 1) * pageSize;
       const end_index = start_index + pageSize;
 
@@ -30,6 +30,16 @@ setup = function () {
       };
     }
   })
+}
+setup = function () {
+  // $("select option:selected").val()
+  $("select").change(() => {
+    pageSize = Number($("select option:selected").val())
+
+    display();
+  })
+
+  display();
 
   $("body").on("click", ".backdropBtn", function () {
     banana = $(this).attr("dummyBackDropPAth")
