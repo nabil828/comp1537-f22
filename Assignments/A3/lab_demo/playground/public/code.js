@@ -1,43 +1,34 @@
-
-receivedArr = []
+receivedArray = []
 
 function setup() {
-  $("#unicornNameButton").click(
-    function () {
+  $("#getByNameBtn").click(function () {
+    $.ajax({
+      url: "http://localhost:5000/getUnicornByNameRoute",
+      type: "POST",
+      data: { unicornNameInHTTPBody: $("#unicornNameInHTML").val() },
+      success: function (data) {
+        // console.log(data);
+        receivedArray = data;
+        $("#result").html(JSON.stringify(data));
+      }
+    });
+  })
 
-      $.ajax(
-        {
-          url: "http://localhost:5000/filteredUnicorns",
-          type: "POST",
-          data: {
-            unicornNameFromHTTPbody: $("#unicornNameFromHTML").val()
-          },
-          success: function (data) {
-            console.log(data);
-            receivedArr = data;
-            $("#result").html(JSON.stringify(data))
-
-          }
-        }
-      );
-
-    }
-  )
-
-
-  $('#nameFilter').change(function () {
-    if (this.checked) {
-      // alert("checked");
-      newArr = receivedArr.map((item) => {
+  $("#nameFilter").change(function () {
+    if ($(this).prop("checked")) {
+      anotherArray = receivedArray.map((item) => {
         return item.name;
       })
-      console.log(newArr);
-      $("#result").html(JSON.stringify(newArr[0]))
+      $("#result").html(JSON.stringify(anotherArray));
+
     } else {
-      alert("unchecked");
+      anotherArray = receivedArray.map((item) => {
+        return item;
+      })
+      $("#result").html(JSON.stringify(anotherArray));
+
     }
-  });
+  })
 }
 
-
-$(document).ready(setup);
+$(document).ready(setup)
