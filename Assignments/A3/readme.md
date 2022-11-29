@@ -13,17 +13,18 @@ If you want a feedback, I will mark yours by Monday the 5th.
 Positive rubric items:
 - If searching is working, you should get [6] marks
 ```
+
 Test Case 0
 Name = Aurora
 Result: Aurora's object
 
 Test Case 1
 400 <= weight <= 600 
-Result => Aurora,Roooooodles,Solnara,Raleigh,Nimue
+Result => Horny,Aurora,Roooooodles,Solnara,Raleigh,Nimue
 
 Test Case 2
 200 <= weight <= 450 
-Result => Raleigh
+Result => Aurora,Raleigh
 
 Test Case 3
 Unicorns which like carrot
@@ -38,6 +39,8 @@ Test Case 5
 Unicorns which like apple and carrot
 Result => Solnara
 ```
+
+
 - If filtering/projection is worknig, you should get [4] marks
 ```
 Test Case 1 - Filter Name Only
