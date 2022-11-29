@@ -7,9 +7,26 @@ function setup() {
       type: "POST",
       data: { unicornNameInHTTPBody: $("#unicornNameInHTML").val() },
       success: function (data) {
-        // console.log(data);
+        console.log("data", data);
         receivedArray = data;
-        $("#result").html(JSON.stringify(data));
+        result = "";
+        result = "<table>"
+        data.map((aUnicorn) => {
+          console.log("aUnicorn", aUnicorn);
+          if (aUnicorn["vaccinated"] == true)
+            result += `<tr class="red">`
+          else
+            result += `<tr class="">`
+
+          for (var field in aUnicorn) {
+            result += `<td>${aUnicorn[field]}</td>`
+          }
+          result += `</tr>`
+        })
+        result += "</table>"
+
+        // $("#result").html(JSON.stringify(data));
+        $("#result").html(result);
       }
     });
   })
