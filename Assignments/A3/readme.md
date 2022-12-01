@@ -34,14 +34,13 @@ Test Case 4
 Unicorns which like apple
 Result => Roooooodles,Solnara,Raleigh,Leia,Pilot
 
-
 Test Case 5
 Unicorns which like apple and carrot
 Result => Solnara
 ```
 
 
-- If filtering/projection is worknig, you should get [4] marks
+- If filtering/projection is working, you should get [4] marks
 ```
 Test Case 1 - Filter Name Only
 Test Case 2 - Filter Weight Only
@@ -49,3 +48,8 @@ Test Case 3 - Filter Name and Weight together
 Test Case 4 - No Filters
 ```
 
+# Deliverables
+  - One minute max YT offline video demonstrating that the UI works. 
+  - GitHub link for code 
+  - GitHub link for Self-Graded sheet - Grade your self out of 10 based on whether you think you have passed the previous 10 test cases.
+  - [Optional] Deploy your site on render.com. Instructions on how-to will posted. 
