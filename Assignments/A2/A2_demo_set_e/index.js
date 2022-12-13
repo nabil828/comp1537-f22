@@ -12,6 +12,7 @@ display_page = () => {
       url: "https://api.themoviedb.org/3/movie/top_rated?api_key=ed4ef9b0f9bcb9c237ab83a2c2ffb909&language=en-US&page=1",
       type: "GET",
       success: function (data) {
+        console.log(data);
         let start_index = PAGE_SIZE * (CURRENT_PAGE - 1);
         let end_index = PAGE_SIZE * (CURRENT_PAGE - 1) + PAGE_SIZE;
         for (i = start_index; i < end_index; i++) {
@@ -40,6 +41,7 @@ display_page = () => {
     }
   )
 }
+
 setup = function () {
   PAGE_SIZE = $("#pageSizeMenu option:selected").val();
 

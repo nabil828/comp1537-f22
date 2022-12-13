@@ -1,0 +1,14 @@
+
+- [10/22] Midterm Programming Test
+  - [10/14] Wide screen design
+    - [2/2] Header
+    - [0/2] White space on the sides
+        - no white space on the sides
+    - [2/2] Main's H1 and paragraph
+    - [6/8] Cards
+      - [4/4] HTML elements
+      - [2/4] CSS - float, fixed image and card widths:
+  - [0/4] Medium screen design
+    - not responsive
+  - [0/4] Small screen design:
+    - not responsive
